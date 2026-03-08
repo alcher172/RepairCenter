@@ -61,10 +61,12 @@
   <catalogs>Catalog.КодыНеисправностей</catalogs>
   <documents>Document.Ремонт</documents>
   <documents>Document.ОтчетОРемонтах</documents>
+  <documents>Document.АктНРП</documents>
   <enums>Enum.СтатусыОтчета</enums>
   <enums>Enum.ВидРемонта</enums>
   <enums>Enum.ВидКлиента</enums>
   <enums>Enum.КатегорииНоменклатуры</enums>
+  <enums>Enum.ВидМестонахожденияНРП</enums>
   <reports>Report.АнализРемонтов</reports>
   <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>
