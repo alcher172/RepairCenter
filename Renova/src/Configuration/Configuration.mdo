@@ -42,15 +42,19 @@
   </languages>
   <subsystems>Subsystem.Справочники</subsystems>
   <subsystems>Subsystem.Документы</subsystems>
-  <subsystems>Subsystem.ПервичнаяЗагрузкаДанных</subsystems>
   <subsystems>Subsystem.Аналитика</subsystems>
+  <subsystems>Subsystem.Администрирование</subsystems>
   <styles>Style.СтильСиний</styles>
   <commonModules>CommonModule.РаботаСCSVСервер</commonModules>
   <commonModules>CommonModule.СоответсвияСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСтрокойСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
+  <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
+  <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
+  <constants>Constant.ПервоначальнаяЗагрузка</constants>
+  <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.РегионыСервиса</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.КонтактыКонтрагентов</catalogs>
