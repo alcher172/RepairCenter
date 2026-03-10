@@ -6,16 +6,12 @@
     <value>Аналитика</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
     <picture>StdPicture.Chart</picture>
   </picture>
   <content>AccumulationRegister.РемонтыИПродукция</content>
   <content>AccumulationRegister.КонтрагентыИДата</content>
   <content>AccumulationRegister.ФабрикиИСмены</content>
-  <content>Report.ИтогиПоВидамЗаводскойПродукции</content>
-  <content>Report.ИтогиПоВидамПродукции</content>
-  <content>Report.ИтогиПоГруппамМоделей</content>
-  <content>Report.ИтогиПоСрокуСлужбы</content>
-  <content>Report.ИтогиПоГруппамМоделейИКодовНеисправности</content>
+  <content>Report.АнализРемонтов</content>
+  <content>Report.АнализРемонтовОбщий</content>
 </mdclass:Subsystem>

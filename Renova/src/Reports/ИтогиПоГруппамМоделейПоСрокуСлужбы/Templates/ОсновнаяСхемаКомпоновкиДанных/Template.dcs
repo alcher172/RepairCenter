@@ -161,22 +161,40 @@
 			</v8:DateQualifiers>
 		</valueType>
 	</calculatedField>
+	<calculatedField>
+		<dataPath>КатегорияСрока</dataPath>
+		<expression>ВЫБОР
+    КОГДА СрокВЭксплуатации = 0 ТОГДА "1.Предторговый"  КОГДА СрокВЭксплуатации &lt;= 7 ТОГДА "2.До 7 дней"
+    КОГДА СрокВЭксплуатации &lt;= 30 ТОГДА "3.До 30 дней"
+    КОГДА СрокВЭксплуатации &lt;= 90 ТОГДА "4.До 3 месяцев"
+    КОГДА СрокВЭксплуатации &lt;= 180 ТОГДА "5.До полугода"
+    ИНАЧЕ "6.Более полугода"
+КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Категория срока</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>Количество</dataPath>
 		<expression>Сумма(Количество)</expression>
+		<group>Год</group>
 		<group>ГруппыМоделей</group>
-		<group>КодНеисправности</group>
+		<group>КатегорияСрока</group>
 	</totalField>
 	<totalField>
 		<dataPath>СуммаИтого</dataPath>
 		<expression>Сумма(СуммаИтого)</expression>
+		<group>Год</group>
 		<group>ГруппыМоделей</group>
-		<group>КодНеисправности</group>
+		<group>КатегорияСрока</group>
 	</totalField>
 	<totalField>
 		<dataPath>ПроцентЗатрат</dataPath>
 		<expression>Окр(ЕстьNull(Сумма(СуммаИтого) / Вычислить("Сумма(СуммаИтого)","ОбщийИтог") * 100, 0),2) </expression>
-		<group>КодНеисправности</group>
+		<group>КатегорияСрока</group>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -235,11 +253,11 @@
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
-		<dcsset:name>ИтогиПоГруппамМоделейИКодовНеисправности</dcsset:name>
+		<dcsset:name>ИтогиПоСрокуСлужбы</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Итоги по группам моделей и кодам неисправности</v8:content>
+				<v8:content>Итоги по сроку службы</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -264,12 +282,8 @@
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">ГруппыМоделей</dcsset:left>
-					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
-					<dcsset:right xsi:type="v8:ValueListType">
-						<v8:valueType/>
-						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
-					</dcsset:right>
-					<dcsset:userSettingID>b056f63c-9306-4fd7-9c3b-40cda021cf0c</dcsset:userSettingID>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>956ceee5-ebbc-40ae-b74f-3ed4f1b5f55d</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
@@ -281,7 +295,7 @@
 						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
 						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 					</dcscor:value>
-					<dcsset:userSettingID>52787b11-ea38-4290-a248-394781090813</dcsset:userSettingID>
+					<dcsset:userSettingID>419b0203-5d6a-4d48-a24d-554988113520</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
@@ -300,7 +314,7 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:ChartLabelType">Value</dcscor:value>
+						<dcscor:value xsi:type="v8ui:ChartLabelType">SeriesValue</dcscor:value>
 					</dcscor:item>
 				</dcscor:item>
 			</dcsset:outputParameters>
@@ -325,7 +339,7 @@
 				<dcsset:row>
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>КодНеисправности</dcsset:field>
+							<dcsset:field>КатегорияСрока</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
