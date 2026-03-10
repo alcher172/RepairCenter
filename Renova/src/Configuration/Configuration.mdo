@@ -87,6 +87,7 @@
   <dataProcessors>DataProcessor.ЗагрузкаРегионовСервиса</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКонтактовКонтрагентов</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСервисныхЦентров</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаДокументаАктНРД</dataProcessors>
   <accumulationRegisters>AccumulationRegister.РемонтыИПродукция</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.КонтрагентыИДата</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ФабрикиИСмены</accumulationRegisters>
