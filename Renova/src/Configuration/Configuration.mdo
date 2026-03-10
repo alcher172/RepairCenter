@@ -42,15 +42,19 @@
   </languages>
   <subsystems>Subsystem.Справочники</subsystems>
   <subsystems>Subsystem.Документы</subsystems>
-  <subsystems>Subsystem.ПервичнаяЗагрузкаДанных</subsystems>
   <subsystems>Subsystem.Аналитика</subsystems>
+  <subsystems>Subsystem.Администрирование</subsystems>
   <styles>Style.СтильСиний</styles>
   <commonModules>CommonModule.РаботаСCSVСервер</commonModules>
   <commonModules>CommonModule.СоответсвияСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСтрокойСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
+  <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
+  <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
+  <constants>Constant.ПервоначальнаяЗагрузка</constants>
+  <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.РегионыСервиса</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.КонтактыКонтрагентов</catalogs>
@@ -61,10 +65,12 @@
   <catalogs>Catalog.КодыНеисправностей</catalogs>
   <documents>Document.Ремонт</documents>
   <documents>Document.ОтчетОРемонтах</documents>
+  <documents>Document.АктНРП</documents>
   <enums>Enum.СтатусыОтчета</enums>
   <enums>Enum.ВидРемонта</enums>
   <enums>Enum.ВидКлиента</enums>
   <enums>Enum.КатегорииНоменклатуры</enums>
+  <enums>Enum.ВидМестонахожденияНРП</enums>
   <reports>Report.АнализРемонтов</reports>
   <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>
@@ -81,6 +87,7 @@
   <dataProcessors>DataProcessor.ЗагрузкаРегионовСервиса</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКонтактовКонтрагентов</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСервисныхЦентров</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаДокументаАктНРД</dataProcessors>
   <accumulationRegisters>AccumulationRegister.РемонтыИПродукция</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.КонтрагентыИДата</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ФабрикиИСмены</accumulationRegisters>
