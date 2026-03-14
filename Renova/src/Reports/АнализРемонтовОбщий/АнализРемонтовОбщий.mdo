@@ -10,7 +10,6 @@
     <value>Анализ ремонтов общий</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultForm>Report.АнализРемонтовОбщий.Form.ФормаОтчета</defaultForm>
   <mainDataCompositionSchema>Report.АнализРемонтовОбщий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <attributes uuid="52103290-96b9-438e-bf97-543b933aadc5">
     <name>НастройкиДиаграммы</name>

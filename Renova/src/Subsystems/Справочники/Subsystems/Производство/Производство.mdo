@@ -8,6 +8,7 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ФабрикиИСмены</content>
+  <content>10b2ad54-232a-44eb-ab4a-8c9a1aba0fa0</content>
   <content>Style.СтильСиний</content>
   <parentSubsystem>Subsystem.Справочники</parentSubsystem>
 </mdclass:Subsystem>

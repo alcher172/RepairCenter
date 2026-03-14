@@ -7,7 +7,7 @@
   <name>ИтогиПоВидамЗаводскойПродукции</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по видам заводской продукции</value>
+    <value>Итоги по видам заводской продукции</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоВидамЗаводскойПродукции.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
