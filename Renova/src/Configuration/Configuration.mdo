@@ -16,6 +16,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <version>1.0.0.1</version>
   <defaultReportForm>CommonForm.ФормаОтчета</defaultReportForm>
   <usedMobileApplicationFunctionalities>
     <functionality>
@@ -46,6 +47,7 @@
   <subsystems>Subsystem.ПервичнаяЗагрузкаДанных</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
+  <styleItems>StyleItem.ШрифтЖирный</styleItems>
   <styles>Style.СтильСиний</styles>
   <sessionParameters>SessionParameter.АдресНастроек</sessionParameters>
   <commonModules>CommonModule.РаботаСCSVСервер</commonModules>
@@ -63,6 +65,7 @@
   <commonForms>CommonForm.Настройки</commonForms>
   <commonForms>CommonForm.ФормаВыбораОтчета</commonForms>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
+  <commonForms>CommonForm.ФормаВыбораМесяца</commonForms>
   <catalogs>Catalog.РегионыСервиса</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.КонтактыКонтрагентов</catalogs>
