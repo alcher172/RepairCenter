@@ -32,7 +32,6 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
-  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.27</compatibilityMode>
   <languages uuid="9e481b12-1888-4e0c-bd53-652864e33a13">
     <name>Русский</name>
@@ -84,6 +83,7 @@
   <enums>Enum.КатегорииНоменклатуры</enums>
   <enums>Enum.ВидМестонахожденияНРП</enums>
   <reports>Report.АнализРемонтов</reports>
+  <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>
   <reports>Report.ИтогиПоВидамПродукции</reports>
   <reports>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы</reports>
