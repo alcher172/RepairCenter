@@ -53,6 +53,7 @@
   <commonModules>CommonModule.СоответсвияСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСтрокойСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
+  <commonModules>CommonModule.РаботаСФайломСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.РаботаСДиаграммами</commonModules>
   <commonModules>CommonModule.ИсточникДанныхСКД</commonModules>
@@ -73,7 +74,6 @@
   <catalogs>Catalog.ГруппыМоделей</catalogs>
   <catalogs>Catalog.ФабрикиИСмены</catalogs>
   <catalogs>Catalog.КодыНеисправностей</catalogs>
-  <catalogs>Catalog.ФирмыПроизводители</catalogs>
   <catalogs>Catalog.Фирмы</catalogs>
   <documents>Document.Ремонт</documents>
   <documents>Document.ОтчетОРемонтах</documents>
@@ -110,7 +110,6 @@
   <accumulationRegisters>AccumulationRegister.ФабрикиИСмены</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.АктыПродукцияИКод</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.АктыКонтрагентДатаСроки</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.ОтчетПоПродажам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Производство</accumulationRegisters>
 </mdclass:Configuration>
