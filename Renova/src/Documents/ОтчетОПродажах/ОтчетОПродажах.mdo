@@ -97,12 +97,13 @@
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers/>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
     </type>
-    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -150,7 +151,6 @@
       <key>ru</key>
       <value>Товары</value>
     </synonym>
-    <fillChecking>ShowError</fillChecking>
     <attributes uuid="cfb4e4b4-609a-4d8d-ace4-b31b3811a4f2">
       <name>ВидПродукции</name>
       <synonym>
