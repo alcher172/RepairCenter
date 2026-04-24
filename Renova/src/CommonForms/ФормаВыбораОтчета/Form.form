@@ -225,23 +225,6 @@
       </edit>
     </columns>
     <columns>
-      <name>ЭтоВариант</name>
-      <title>
-        <key>ru</key>
-        <value>Это вариант</value>
-      </title>
-      <id>8</id>
-      <valueType>
-        <types>Boolean</types>
-      </valueType>
-      <view>
-        <common>true</common>
-      </view>
-      <edit>
-        <common>true</common>
-      </edit>
-    </columns>
-    <columns>
       <name>КлючВарианта</name>
       <title>
         <key>ru</key>
