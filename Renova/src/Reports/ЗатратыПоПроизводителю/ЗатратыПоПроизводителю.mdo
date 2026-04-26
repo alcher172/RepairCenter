@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3d64d62-49f5-450b-a848-9a0442dedb57">
+  <producedTypes>
+    <objectType typeId="0dcb2453-37a4-4bdf-9e08-29dd512002b5" valueTypeId="d5f95b17-62b7-41c2-894c-36035889c3a9"/>
+    <managerType typeId="492d6bc3-d517-4b83-a6a8-75cdd15922ec" valueTypeId="eae614a3-ad5c-4f9a-ac6b-d5a853e98267"/>
+  </producedTypes>
+  <name>ЗатратыПоПроизводителю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты по производителю</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗатратыПоПроизводителю.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Данные по ремонтам и затратам, сгруппированные по фабрикам и сменам</value>
+  </explanation>
+  <templates uuid="6aa97c63-26ec-429c-81a0-bac7e71646a9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

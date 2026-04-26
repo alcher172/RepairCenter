@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4587439b-5754-45f1-b4d0-c2ea956425fc">
+  <producedTypes>
+    <objectType typeId="7143af37-ec3d-422d-89e5-bc5cdc13e520" valueTypeId="dcb3a33d-68b6-4589-a762-281f6178054a"/>
+    <managerType typeId="33ae5f57-56fc-4685-b2e3-fa3e6969a38d" valueTypeId="57f62aac-e0af-4b12-9351-2fd1df2ebb6c"/>
+  </producedTypes>
+  <name>ЗатратыПоВидамПродукцииПоГодам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты по видам продукции по годам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗатратыПоВидамПродукцииПоГодам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сводные данные по ремонтам и списаниям сгруппированные по видам продукции и году попадания в ремонт (списания) с итогом по затратам</value>
+  </explanation>
+  <templates uuid="38a3c492-bcad-417b-9ffe-6a6100a8ffb4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -7,7 +7,6 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Report.ИтогиПоПродажам</content>
   <content>Report.РемонтыПоДатамПроизводства</content>
   <parentSubsystem>Subsystem.ОтчетыСлужебная</parentSubsystem>
 </mdclass:Subsystem>

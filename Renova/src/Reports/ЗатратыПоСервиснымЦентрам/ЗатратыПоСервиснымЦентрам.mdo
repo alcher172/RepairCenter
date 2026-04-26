@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fcfb8ae-cc7e-4ca4-a0c1-abd288bd1746">
+  <producedTypes>
+    <objectType typeId="5e1b19a1-687d-4675-8a82-9af15f538502" valueTypeId="b67e721c-d809-4436-92c1-ba022a37926a"/>
+    <managerType typeId="7b5383e2-73b2-4794-95c7-d6755b79a789" valueTypeId="66fdfa50-757c-4c14-a66a-1684a3c81fdd"/>
+  </producedTypes>
+  <name>ЗатратыПоСервиснымЦентрам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты по сервисным центрам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗатратыПоСервиснымЦентрам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Данные по общим затратам на ремонты, сгруппированные по сервисным центрам</value>
+  </explanation>
+  <templates uuid="e3d6e6bb-32d2-486b-a610-a8c81a907fc5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
