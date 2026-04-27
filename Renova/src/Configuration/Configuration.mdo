@@ -53,12 +53,14 @@
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.БазовыеПрава</roles>
   <commonModules>CommonModule.РаботаСCSVСервер</commonModules>
-  <commonModules>CommonModule.СоответсвияСервер</commonModules>
+  <commonModules>CommonModule.СоответствияСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСтрокойСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
   <commonModules>CommonModule.РаботаСФайломСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСпискамиИТаблицамиКлиент</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияСлужебныйКлиентСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
   <definedTypes>DefinedType.Количество</definedTypes>
