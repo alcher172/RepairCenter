@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c74f669-68de-46b1-84b6-01c5bf50cade">
-  <name>ОтчетыПоКодамИДатам</name>
+  <name>РазныеОтчеты</name>
   <synonym>
     <key>ru</key>
-    <value>По кодам и датам</value>
+    <value>Дополнительно</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.ИтогиПоПродажам</content>
+  <content>Report.ИтогиПоПроизводству</content>
   <parentSubsystem>Subsystem.ОтчетыСлужебная</parentSubsystem>
 </mdclass:Subsystem>

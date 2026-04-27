@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d69af61-44c9-4ae0-be66-f087e0487074">
+  <producedTypes>
+    <objectType typeId="7a8ac91b-9eae-4abe-9656-d37cbedf17c7" valueTypeId="5c36fa28-b00f-4f4b-ae13-8defc0785c13"/>
+    <managerType typeId="7da74582-0607-4de7-a56a-a3b25fbeff69" valueTypeId="e5be5838-db1c-4cdb-af3f-297587b2ef82"/>
+  </producedTypes>
+  <name>ИтогиПоПродажам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Итоги по продажам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ИтогиПоПродажам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Итоги по продажам по годам, сгруппированные по видам продукции и группам моделей.</value>
+  </explanation>
+  <templates uuid="d7d43e26-16df-40df-afbe-525957ac2b5f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -8,6 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <subsystems>ОтчетыПоЗатратам</subsystems>
-  <subsystems>ОтчетыПоКодамИДатам</subsystems>
   <subsystems>ВРазрезеПродажИПроизводства</subsystems>
+  <subsystems>РазныеОтчеты</subsystems>
 </mdclass:Subsystem>

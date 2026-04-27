@@ -97,6 +97,10 @@
   <reports>Report.ЗатратыПоВидамПродукцииПоГодам</reports>
   <reports>Report.ЗатратыПоСервиснымЦентрам</reports>
   <reports>Report.ЗатратыПоПроизводителю</reports>
+  <reports>Report.РемонтыПоДатамПродаж</reports>
+  <reports>Report.ИтогиПоПродажам</reports>
+  <reports>Report.ИтогиПоПроизводству</reports>
+  <reports>Report.ОбщийБракПоДатамПродаж</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>

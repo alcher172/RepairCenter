@@ -3,6 +3,6 @@
   <subsystemsOrder>
     <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоЗатратам</subsystems>
     <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ВРазрезеПродажИПроизводства</subsystems>
-    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоКодамИДатам</subsystems>
+    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.РазныеОтчеты</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>
