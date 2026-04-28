@@ -52,14 +52,14 @@
           <segments>СписокГрупп</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
+        <excludedCommands>Copy</excludedCommands>
+        <excludedCommands>CopyToClipboard</excludedCommands>
         <excludedCommands>Create</excludedCommands>
         <excludedCommands>List</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
-        <excludedCommands>SaveDynamicListSettings</excludedCommands>
-        <excludedCommands>LoadDynamicListSettings</excludedCommands>
         <excludedCommands>ListSettings</excludedCommands>
+        <excludedCommands>LoadDynamicListSettings</excludedCommands>
+        <excludedCommands>SaveDynamicListSettings</excludedCommands>
         <excludedCommands>ShowMultipleSelection</excludedCommands>
-        <excludedCommands>CopyToClipboard</excludedCommands>
         <items xsi:type="form:FormField">
           <name>СписокГруппСсылка</name>
           <id>80</id>
@@ -268,7 +268,8 @@
         <key>ru</key>
         <value>Группа левая колонка</value>
       </title>
-      <width>45</width>
+      <width>25</width>
+      <horizontalStretch>true</horizontalStretch>
       <extendedTooltip>
         <name>ГруппаЛеваяКолонкаРасширеннаяПодсказка</name>
         <id>45</id>
@@ -630,6 +631,8 @@
         <key>ru</key>
         <value>Группа правая колонка</value>
       </title>
+      <width>90</width>
+      <horizontalStretch>true</horizontalStretch>
       <extendedTooltip>
         <name>ГруппаПраваяКолонкаРасширеннаяПодсказка</name>
         <id>47</id>
