@@ -5,17 +5,26 @@
 		<dataSourceType>Local</dataSourceType>
 	</dataSource>
 	<dataSet xsi:type="DataSetQuery">
-		<name>Ремонты</name>
+		<name>Основной</name>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВидПродукции</dataPath>
 			<field>ВидПродукции</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид продукции</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>МодельПродукции</dataPath>
 			<field>МодельПродукции</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель продукции</v8:content>
+				</v8:item>
+			</title>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -23,107 +32,41 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КодНеисправности</dataPath>
 			<field>КодНеисправности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Продажи</dataPath>
+			<field>Продажи</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Ремонты</dataPath>
 			<field>Ремонты</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>В ремонте</v8:content>
-				</v8:item>
-			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>РемонтыСумма</dataPath>
 			<field>РемонтыСумма</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Затраты на ремонт</v8:content>
-				</v8:item>
-			</title>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Год</dataPath>
-			<field>Год</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Год</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ГруппаМоделей</dataPath>
-			<field>ГруппаМоделей</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа моделей</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
-	РемонтыИПродукцияОбороты.КоличествоОборот КАК Ремонты,
-	РемонтыИПродукцияОбороты.СуммаИтогоОборот КАК РемонтыСумма,
-	ГОД(РемонтыИПродукцияОбороты.Период) КАК Год,
-	РемонтыИПродукцияОбороты.ВидПродукции КАК ВидПродукции,
-	РемонтыИПродукцияОбороты.МодельПродукции КАК МодельПродукции,
-	ГруппыМоделей.Ссылка КАК ГруппаМоделей
-ИЗ
-	РегистрНакопления.РемонтыИПродукция.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Год,) КАК РемонтыИПродукцияОбороты
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ГруппыМоделей КАК ГруппыМоделей
-		ПО РемонтыИПродукцияОбороты.МодельПродукции = ГруппыМоделей.МодельПродукции.Модель</query>
-	</dataSet>
-	<dataSet xsi:type="DataSetQuery">
-		<name>АктыНРП</name>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Списано</dataPath>
 			<field>Списано</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Списано</v8:content>
-				</v8:item>
-			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МоделиПродукции</dataPath>
+			<field>МоделиПродукции</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Год</dataPath>
 			<field>Год</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Год</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидПродукции</dataPath>
-			<field>ВидПродукции</field>
+			<dataPath>Фирма</dataPath>
+			<field>Фирма</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>МодельПродукции</dataPath>
-			<field>МодельПродукции</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КодНеисправности</dataPath>
-			<field>КодНеисправности</field>
+			<dataPath>МесяцУчета</dataPath>
+			<field>МесяцУчета</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ГруппаМоделей</dataPath>
@@ -137,34 +80,65 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	АктыПродукцияИКодОбороты.КоличествоОборот КАК Списано,
-	ГОД(АктыПродукцияИКодОбороты.Период) КАК Год,
-	АктыПродукцияИКодОбороты.ВидПродукции КАК ВидПродукции,
+	РемонтыИПродукцияОбороты.МодельПродукции КАК МодельПродукции,
+	РемонтыИПродукцияОбороты.СуммаИтогоОборот КАК РемонтыСумма,
+	ГОД(РемонтыИПродукцияОбороты.Период) КАК Год,
+	РемонтыИПродукцияОбороты.КоличествоОборот КАК Ремонты
+ПОМЕСТИТЬ ВТ_Ремонты
+ИЗ
+	РегистрНакопления.РемонтыИПродукция.Обороты(,, Год,) КАК РемонтыИПродукцияОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	АктыПродукцияИКодОбороты.МодельПродукции КАК МодельПродукции,
+	АктыПродукцияИКодОбороты.КоличествоОборот КАК Списано,
+	ГОД(АктыПродукцияИКодОбороты.Период) КАК Год
+ПОМЕСТИТЬ ВТ_Списания
+ИЗ
+	РегистрНакопления.АктыПродукцияИКод.Обороты(,, Год,) КАК АктыПродукцияИКодОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПродажиОбороты.МоделиПродукции КАК МодельПродукции,
+	ПродажиОбороты.Фирма КАК Фирма,
+	ПродажиОбороты.КоличествоОборот КАК Продажи,
+	ГОД(ПродажиОбороты.Период) КАК Год,
+	ВТ_Ремонты.Ремонты КАК Ремонты,
+	ВТ_Ремонты.РемонтыСумма КАК РемонтыСумма,
+	ВТ_Списания.Списано КАК Списано,
+	ПродажиОбороты.ВидПродукции КАК ВидПродукции,
 	ГруппыМоделей.Ссылка КАК ГруппаМоделей
 ИЗ
-	РегистрНакопления.АктыПродукцияИКод.Обороты(&amp;НачалоПериода, &amp;КонецПериода,Год,) КАК АктыПродукцияИКодОбороты
+	РегистрНакопления.Продажи.Обороты(,, Год,) КАК ПродажиОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Ремонты КАК ВТ_Ремонты
+		ПО ПродажиОбороты.МоделиПродукции = ВТ_Ремонты.МодельПродукции
+		И ГОД(ПродажиОбороты.Период) = ВТ_Ремонты.Год
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Списания КАК ВТ_Списания
+		ПО ПродажиОбороты.МоделиПродукции = ВТ_Списания.МодельПродукции
+		И ГОД(ПродажиОбороты.Период) = ВТ_Списания.Год
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ГруппыМоделей КАК ГруппыМоделей
-		ПО АктыПродукцияИКодОбороты.МодельПродукции = ГруппыМоделей.МодельПродукции.Модель</query>
+		ПО ПродажиОбороты.МоделиПродукции = ГруппыМоделей.МодельПродукции.Модель</query>
 	</dataSet>
-	<dataSetLink>
-		<sourceDataSet>Ремонты</sourceDataSet>
-		<destinationDataSet>АктыНРП</destinationDataSet>
-		<sourceExpression>ВидПродукции</sourceExpression>
-		<destinationExpression>ВидПродукции</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Ремонты</sourceDataSet>
-		<destinationDataSet>АктыНРП</destinationDataSet>
-		<sourceExpression>МодельПродукции</sourceExpression>
-		<destinationExpression>МодельПродукции</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Ремонты</sourceDataSet>
-		<destinationDataSet>АктыНРП</destinationDataSet>
-		<sourceExpression>год</sourceExpression>
-		<destinationExpression>Год</destinationExpression>
-	</dataSetLink>
+	<calculatedField>
+		<dataPath>НаЕдиницу</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>На единицу</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
 	<totalField>
 		<dataPath>Ремонты</dataPath>
 		<expression>Сумма(Ремонты)</expression>
@@ -176,6 +150,14 @@
 	<totalField>
 		<dataPath>Списано</dataPath>
 		<expression>Сумма(Списано)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НаЕдиницу</dataPath>
+		<expression>Окр(Сумма(РемонтыСумма)/Сумма(Продажи), 2)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Продажи</dataPath>
+		<expression>Сумма(Продажи)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -258,6 +240,9 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Продажи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Списано</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -265,6 +250,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>РемонтыСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаЕдиницу</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -639,6 +627,9 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Продажи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Списано</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -646,6 +637,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>РемонтыСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаЕдиницу</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>

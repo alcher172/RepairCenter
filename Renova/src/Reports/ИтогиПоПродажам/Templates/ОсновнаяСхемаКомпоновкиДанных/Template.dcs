@@ -1221,7 +1221,7 @@
 					<dcsset:item>
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Модель</dcsset:field>
+								<dcsset:field>МодельПродукции</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
@@ -1287,7 +1287,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Модель</dcsset:field>
+							<dcsset:field>МодельПродукции</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -1379,7 +1379,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Модель</dcsset:field>
+							<dcsset:field>МодельПродукции</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

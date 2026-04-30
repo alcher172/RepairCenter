@@ -9,5 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.ИтогиПоПродажам</content>
   <content>Report.ИтогиПоПроизводству</content>
+  <content>Report.ПоСрокуСлужбы</content>
   <parentSubsystem>Subsystem.ОтчетыСлужебная</parentSubsystem>
 </mdclass:Subsystem>

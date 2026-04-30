@@ -7,7 +7,7 @@
   <name>ЗатратыПоВидамПродукцииПоГодам</name>
   <synonym>
     <key>ru</key>
-    <value>Затраты по видам продукции по годам</value>
+    <value>Затраты по видам продукции</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ЗатратыПоВидамПродукцииПоГодам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

@@ -103,6 +103,8 @@
   <reports>Report.ИтогиПоПродажам</reports>
   <reports>Report.ИтогиПоПроизводству</reports>
   <reports>Report.ОбщийБракПоДатамПродаж</reports>
+  <reports>Report.ЗатратыПоВидамПродукцииНаЕдиницу</reports>
+  <reports>Report.ПоСрокуСлужбы</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>

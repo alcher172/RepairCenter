@@ -10,5 +10,6 @@
   <content>Report.ЗатратыПоВидамПродукцииПоГодам</content>
   <content>Report.ЗатратыПоСервиснымЦентрам</content>
   <content>Report.ЗатратыПоПроизводителю</content>
+  <content>Report.ЗатратыПоВидамПродукцииНаЕдиницу</content>
   <parentSubsystem>Subsystem.ОтчетыСлужебная</parentSubsystem>
 </mdclass:Subsystem>
