@@ -48,6 +48,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ЗатратыПоСервиснымЦентрам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ИтогиПоПроизводству</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</name>
 		<right>
 			<name>Use</name>
@@ -84,6 +106,17 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ИтогиПоПродажам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -158,7 +191,18 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоСписаниям</name>
+		<name>Report.ЗатратыПоВидамПродукцииПоГодам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ОтчетыСлужебная.Subsystem.РазныеОтчеты</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -203,17 +247,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.ОтчетыСЦ</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ИтогиПоГруппамМоделейПоСрокуСлужбы</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -337,18 +370,18 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ОтчетыСлужебная</name>
+		<name>Report.РемонтыПоДатамПродаж</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Report.ИтогиПоГруппамМоделейИКодовНеисправности</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
+		<name>Subsystem.ОтчетыСлужебная</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -409,17 +442,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ИтогиПоВидамЗаводскойПродукции</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ЗагрузкаКодовНеисправности</name>
 		<right>
 			<name>Use</name>
@@ -465,17 +487,6 @@
 	</object>
 	<object>
 		<name>Subsystem.Отчеты</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ИтогиПоГруппамМоделей</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -547,17 +558,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ИтогиПоПродажам</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>AccumulationRegister.Продажи</name>
 		<right>
 			<name>Read</name>
@@ -595,29 +595,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.Справочники.Subsystem.Продукция</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ИтогиПоВидамПродукции</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -661,21 +639,14 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоРемонтам</name>
+		<name>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоЗатратам</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.ФормаОтчета</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ПровекаЗаполненияКодовНоменклатуры</name>
+		<name>Report.ЗатратыПоПроизводителю</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -689,6 +660,17 @@
 		<name>AccumulationRegister.КонтрагентыИДата</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОбщийБракПоДатамПродаж</name>
+		<right>
+			<name>Use</name>
 			<value>true</value>
 		</right>
 		<right>

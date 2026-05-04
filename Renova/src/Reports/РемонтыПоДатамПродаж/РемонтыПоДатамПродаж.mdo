@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77cb2eca-c88f-408d-bd58-4e5ef8e90f0c">
+  <producedTypes>
+    <objectType typeId="f0233408-e756-4b5e-9a33-cba7ad5611fd" valueTypeId="af5d13e9-2e72-4dcc-ad8c-90a009abe0d4"/>
+    <managerType typeId="0a4857df-9249-4421-9eea-e4a58e4fbf49" valueTypeId="74db027e-82d3-4db5-871d-c77c387a93fc"/>
+  </producedTypes>
+  <name>РемонтыПоДатамПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонты по датам продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РемонтыПоДатамПродаж.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сопоставление количества ремонтов по дате попадания в ремонт с объемом продаж за этотже год. С  группировкой по видам продукции</value>
+  </explanation>
+  <templates uuid="87ea69a5-9faf-4ac4-84bf-da9400078069">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

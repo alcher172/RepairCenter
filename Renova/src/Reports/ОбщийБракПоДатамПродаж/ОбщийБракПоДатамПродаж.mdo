@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7bb6f24-3225-4f12-bb9a-82f0e4c29293">
+  <producedTypes>
+    <objectType typeId="c5ecade4-c7dd-4a1b-b453-0c8ddd1b9a11" valueTypeId="6a862bcb-09a2-48f9-a28e-ac505469bd1c"/>
+    <managerType typeId="c2668ac8-bf11-45d0-88af-af4e6b632873" valueTypeId="1ba45f0b-10ec-415c-9736-535703024aa4"/>
+  </producedTypes>
+  <name>ОбщийБракПоДатамПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общий брак по датам продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОбщийБракПоДатамПродаж.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сопоставление общего количества брака (ремонты + списания) по году попадания в ремонт с объемом продаж за этотже год. С  группировкой по видам продукции</value>
+  </explanation>
+  <templates uuid="c28d07bd-9ea8-4bd6-a9d1-ad71c38bb0d1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

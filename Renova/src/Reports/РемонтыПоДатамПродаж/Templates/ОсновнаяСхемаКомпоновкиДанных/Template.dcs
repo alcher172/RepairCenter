@@ -5,100 +5,6 @@
 		<dataSourceType>Local</dataSourceType>
 	</dataSource>
 	<dataSet xsi:type="DataSetQuery">
-		<name>Ремонты</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидПродукции</dataPath>
-			<field>ВидПродукции</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Модель</dataPath>
-			<field>Модель</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Модель</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Фабрика</dataPath>
-			<field>Фабрика</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Год</dataPath>
-			<field>Год</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Ремонты</dataPath>
-			<field>Ремонты</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ремонты</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КодНеисправности</dataPath>
-			<field>КодНеисправности</field>
-		</field>
-		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
-	ФабрикиИСмены.Фабрика КАК Фабрика,
-	ФабрикиИСмены.Регистратор КАК Регистратор,
-	ФабрикиИСмены.НомерСтроки КАК НомерСтроки,
-	ГОД(ФабрикиИСмены.ДатаПроизводства) КАК Год,
-	ФабрикиИСмены.Количество КАК Количество
-ПОМЕСТИТЬ ВТ_Фабрики
-ИЗ
-	РегистрНакопления.ФабрикиИСмены КАК ФабрикиИСмены
-ГДЕ
-	ФабрикиИСмены.ДатаПроизводства &gt;= &amp;НачалоПериода
-	И ФабрикиИСмены.ДатаПроизводства &lt;= &amp;КонецПериода
-	И ФабрикиИСмены.Фабрика &lt;&gt; ЗНАЧЕНИЕ(Справочник.ФабрикиИСмены.ПустаяСсылка)
-
-ИНДЕКСИРОВАТЬ ПО
-	Регистратор,
-	НомерСтроки
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	РемонтыИПродукция.ВидПродукции КАК ВидПродукции,
-	РемонтыИПродукция.МодельПродукции КАК Модель,
-	РемонтыИПродукция.Регистратор КАК Регистратор,
-	РемонтыИПродукция.НомерСтроки КАК НомерСтроки,
-	РемонтыИПродукция.КодНеисправности КАК КодНеисправности
-ПОМЕСТИТЬ ВТ_Продукция
-ИЗ
-	РегистрНакопления.РемонтыИПродукция КАК РемонтыИПродукция
-
-ИНДЕКСИРОВАТЬ ПО
-	Регистратор,
-	НомерСтроки
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	ВТ_Фабрики.Фабрика КАК Фабрика,
-	ВТ_Фабрики.Год КАК Год,
-	ВТ_Продукция.ВидПродукции КАК ВидПродукции,
-	ВТ_Продукция.Модель КАК Модель,
-	ВТ_Фабрики.Количество КАК Ремонты,
-	ВТ_Продукция.КодНеисправности КАК КодНеисправности
-ИЗ
-	ВТ_Фабрики КАК ВТ_Фабрики
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_Продукция КАК ВТ_Продукция
-		ПО ВТ_Фабрики.Регистратор = ВТ_Продукция.Регистратор
-		И ВТ_Фабрики.НомерСтроки = ВТ_Продукция.НомерСтроки</query>
-	</dataSet>
-	<dataSet xsi:type="DataSetQuery">
 		<name>ГруппыМоделей</name>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Модель</dataPath>
@@ -124,16 +30,65 @@
 		ПО ГруппыМоделей.Ссылка = ГруппыМоделейМодельПродукции.Ссылка</query>
 	</dataSet>
 	<dataSet xsi:type="DataSetQuery">
-		<name>Производство</name>
+		<name>Основной</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ремонты</dataPath>
+			<field>Ремонты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ремонты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПродукции</dataPath>
+			<field>ВидПродукции</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Производство</dataPath>
 			<field>Производство</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Производство</v8:content>
+					<v8:content>Продажи</v8:content>
 				</v8:item>
 			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МоделиПродукции</dataPath>
+			<field>МоделиПродукции</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Фирма</dataPath>
+			<field>Фирма</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МесяцУчета</dataPath>
+			<field>МесяцУчета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МодельПродукции</dataPath>
+			<field>МодельПродукции</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодНеисправности</dataPath>
+			<field>КодНеисправности</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Год</dataPath>
@@ -149,69 +104,26 @@
 				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидПродукции</dataPath>
-			<field>ВидПродукции</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>МоделиПродукции</dataPath>
-			<field>МоделиПродукции</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Фабрика</dataPath>
-			<field>Фабрика</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>МесяцУчета</dataPath>
-			<field>МесяцУчета</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ПроизводствоОбороты.КоличествоОборот КАК Производство,
-	ГОД(ПроизводствоОбороты.Период) КАК Год,
-	ПроизводствоОбороты.ВидПродукции КАК ВидПродукции,
-	ПроизводствоОбороты.МоделиПродукции КАК МоделиПродукции,
-	ПроизводствоОбороты.Фабрика КАК Фабрика
+	РемонтыИПродукцияОбороты.КоличествоОборот КАК Ремонты,
+	ПродажиОбороты.ВидПродукции КАК ВидПродукции,
+	ПродажиОбороты.КоличествоОборот КАК Производство,
+	ПродажиОбороты.МоделиПродукции КАК МодельПродукции,
+	ГОД(ПродажиОбороты.Период) КАК Год,
+	ПродажиОбороты.Фирма КАК Фирма,
+	РемонтыИПродукцияОбороты.КодНеисправности КАК КодНеисправности
 ИЗ
-	РегистрНакопления.Производство.Обороты(,, Год,) КАК ПроизводствоОбороты</query>
+	РегистрНакопления.Продажи.Обороты(,, Год,) КАК ПродажиОбороты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.РемонтыИПродукция.Обороты(,, Год,) КАК РемонтыИПродукцияОбороты
+		ПО ПродажиОбороты.Период = РемонтыИПродукцияОбороты.Период
+		И ПродажиОбороты.МоделиПродукции = РемонтыИПродукцияОбороты.МодельПродукции
+		И ПродажиОбороты.ВидПродукции = РемонтыИПродукцияОбороты.ВидПродукции</query>
 	</dataSet>
 	<dataSetLink>
-		<sourceDataSet>Производство</sourceDataSet>
-		<destinationDataSet>Ремонты</destinationDataSet>
-		<sourceExpression>ВидПродукции</sourceExpression>
-		<destinationExpression>ВидПродукции</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Производство</sourceDataSet>
-		<destinationDataSet>Ремонты</destinationDataSet>
-		<sourceExpression>МоделиПродукции</sourceExpression>
-		<destinationExpression>Модель</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Производство</sourceDataSet>
-		<destinationDataSet>Ремонты</destinationDataSet>
-		<sourceExpression>Фабрика</sourceExpression>
-		<destinationExpression>Фабрика</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Производство</sourceDataSet>
-		<destinationDataSet>Ремонты</destinationDataSet>
-		<sourceExpression>Год</sourceExpression>
-		<destinationExpression>Год</destinationExpression>
-	</dataSetLink>
-	<dataSetLink>
-		<sourceDataSet>Производство</sourceDataSet>
+		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>ГруппыМоделей</destinationDataSet>
-		<sourceExpression>МоделиПродукции</sourceExpression>
+		<sourceExpression>МодельПродукции</sourceExpression>
 		<destinationExpression>Модель</destinationExpression>
 	</dataSetLink>
 	<calculatedField>
@@ -471,11 +383,9 @@
 					<dcsset:item>
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Фабрика</dcsset:field>
+								<dcsset:field>Фирма</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
 						<dcsset:order>
@@ -524,7 +434,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
+							<dcsset:field>Фирма</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -608,7 +518,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
+							<dcsset:field>Фирма</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -778,7 +688,7 @@
 					<dcsset:presentation xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа моделей не заполнена</v8:content>
+							<v8:content>Группа моделей не заполнено</v8:content>
 						</v8:item>
 					</dcsset:presentation>
 				</dcsset:item>
@@ -858,7 +768,7 @@
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Фабрика</dcsset:field>
+								<dcsset:field>Фирма</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
@@ -905,11 +815,6 @@
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>ГруппаМоделей</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -987,7 +892,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
+							<dcsset:field>Фирма</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -1065,9 +970,28 @@
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">Ремонты</dcsset:left>
-					<dcsset:comparisonType>Greater</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидПродукции</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>5c977fd0-6574-4c54-af38-df14bcc996a0</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Фирма</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+					<dcsset:userSettingID>a0210e66-2dbd-4a15-b6d9-8e13a6e77354</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ГруппаМоделей</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>afe9344a-29b7-4241-b7c1-66f60cc88b66</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
@@ -1164,7 +1088,7 @@
 					<dcsset:presentation xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа моделей не заполнена</v8:content>
+							<v8:content>Группа моделей не заполнено</v8:content>
 						</v8:item>
 					</dcsset:presentation>
 				</dcsset:item>
@@ -1173,10 +1097,6 @@
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>
 					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemTable">
@@ -1243,11 +1163,13 @@
 					<dcsset:item>
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Фабрика</dcsset:field>
+								<dcsset:field>Фирма</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:filter>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
@@ -1262,12 +1184,26 @@
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								</dcsset:item>
 							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Ремонты</dcsset:left>
+									<dcsset:comparisonType>Greater</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+									<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+								</dcsset:item>
+							</dcsset:filter>
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
 						</dcsset:item>
 					</dcsset:item>
 				</dcsset:row>
@@ -1309,7 +1245,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
+							<dcsset:field>Фирма</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
@@ -1392,7 +1328,7 @@
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Фабрика</dcsset:field>
+							<dcsset:field>Фирма</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

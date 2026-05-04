@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <subsystemsOrder>
-    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоРемонтам</subsystems>
-    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоСписаниям</subsystems>
+    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ОтчетыПоЗатратам</subsystems>
     <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.ВРазрезеПродажИПроизводства</subsystems>
+    <subsystems>Subsystem.ОтчетыСлужебная.Subsystem.РазныеОтчеты</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

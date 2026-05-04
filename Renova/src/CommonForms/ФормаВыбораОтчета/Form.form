@@ -34,36 +34,6 @@
     </picture>
     <representationInContextMenu>Auto</representationInContextMenu>
   </items>
-  <items xsi:type="form:Decoration">
-    <name>_Декорация5</name>
-    <id>118</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <extendedTooltip>
-      <name>_Декорация5РасширеннаяПодсказка</name>
-      <id>120</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>_Декорация5КонтекстноеМеню</name>
-      <id>119</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>Label</type>
-    <autoMaxWidth>true</autoMaxWidth>
-    <autoMaxHeight>true</autoMaxHeight>
-    <extInfo xsi:type="form:LabelDecorationExtInfo">
-      <horizontalAlign>Left</horizontalAlign>
-    </extInfo>
-  </items>
   <items xsi:type="form:FormGroup">
     <name>_Отчеты</name>
     <id>24</id>

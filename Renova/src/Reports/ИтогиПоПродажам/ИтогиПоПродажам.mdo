@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc7332e0-2f50-4127-810d-3a77cb1ec66b">
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d69af61-44c9-4ae0-be66-f087e0487074">
   <producedTypes>
-    <objectType typeId="6da7e694-070f-47c8-9003-0f44900c6b7f" valueTypeId="ce6853bc-2142-4d8e-aa60-e2bf931b0a92"/>
-    <managerType typeId="bdb60375-a96f-47c0-bb6c-7cce71eb30eb" valueTypeId="f0df3394-d94f-4ebc-b2c8-704d4bac5349"/>
+    <objectType typeId="7a8ac91b-9eae-4abe-9656-d37cbedf17c7" valueTypeId="5c36fa28-b00f-4f4b-ae13-8defc0785c13"/>
+    <managerType typeId="7da74582-0607-4de7-a56a-a3b25fbeff69" valueTypeId="e5be5838-db1c-4cdb-af3f-297587b2ef82"/>
   </producedTypes>
   <name>ИтогиПоПродажам</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по продажам</value>
+    <value>Итоги по продажам</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоПродажам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <explanation>
     <key>ru</key>
-    <value>Сопоставления количества ремонтов с объемом продаж с группировкой по видам продукции</value>
+    <value>Итоги по продажам по годам, сгруппированные по видам продукции и группам моделей.</value>
   </explanation>
-  <templates uuid="744dd4df-4c98-49fe-8053-a135698119e4">
+  <templates uuid="d7d43e26-16df-40df-afbe-525957ac2b5f">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d7e7133-c3b5-48cd-9cfd-237e8612fe95">
+  <producedTypes>
+    <objectType typeId="05965820-0cda-4cf9-ad6f-4d00e780b64e" valueTypeId="b0869e5e-99ba-4489-99af-5d3d3489808b"/>
+    <managerType typeId="1585933d-709f-4bec-810c-e5e1f374d3f1" valueTypeId="e6d934d2-dff1-4c43-b4ca-b4b8f93b3eba"/>
+  </producedTypes>
+  <name>ПоСрокуСлужбы</name>
+  <synonym>
+    <key>ru</key>
+    <value>По сроку службы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПоСрокуСлужбы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Данные по сроку службы изделий до попадания в ремонт сгруппированные по видам продукции и году попадания в ремонт</value>
+  </explanation>
+  <templates uuid="8615ad9c-9615-4516-87ab-4d61f7150eee">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

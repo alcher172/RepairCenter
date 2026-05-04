@@ -47,7 +47,7 @@
   <subsystems>Subsystem.ОтчетыСлужебная</subsystems>
   <styleItems>StyleItem.ШрифтЖирный</styleItems>
   <styleItems>StyleItem.ШрифтЗаголовкаОтчетов</styleItems>
-  <styleItems>StyleItem.ЦветШрифтаНазванияДиаграммы</styleItems>
+  <styleItems>StyleItem.ШрифтОченьМаленький</styleItems>
   <styles>Style.СтильСиний</styles>
   <sessionParameters>SessionParameter.АдресНастроек</sessionParameters>
   <roles>Role.ПолныеПрава</roles>
@@ -58,9 +58,6 @@
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
   <commonModules>CommonModule.РаботаСФайломСервер</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
-  <commonModules>CommonModule.РаботаСДиаграммамиКлиентСервер</commonModules>
-  <commonModules>CommonModule.ИсточникДанныхСКД</commonModules>
-  <commonModules>CommonModule.КомпоновщикСКД</commonModules>
   <commonModules>CommonModule.РаботаСоСпискамиИТаблицамиКлиент</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
@@ -76,8 +73,8 @@
   <constants>Constant.СоздаватьМоделиПриЗагрузкеПродажИПроизводства</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <commonForms>CommonForm.ФормаВыбораОтчета</commonForms>
-  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ФормаВыбораМесяца</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.РегионыСервиса</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.КонтактыКонтрагентов</catalogs>
@@ -97,15 +94,17 @@
   <enums>Enum.КатегорииНоменклатуры</enums>
   <enums>Enum.ВидМестонахожденияНРП</enums>
   <enums>Enum.ВидДокументаПродажиИПроизводство</enums>
-  <reports>Report.ИтогиПоВидамПродукции</reports>
-  <reports>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы</reports>
-  <reports>Report.ИтогиПоВидамЗаводскойПродукции</reports>
-  <reports>Report.ИтогиПоГруппамМоделей</reports>
-  <reports>Report.ИтогиПоГруппамМоделейПоСрокуСлужбы</reports>
-  <reports>Report.ИтогиПоГруппамМоделейИКодовНеисправности</reports>
   <reports>Report.ПровекаЗаполненияКодовНоменклатуры</reports>
-  <reports>Report.ИтогиПоПродажам</reports>
   <reports>Report.РемонтыПоДатамПроизводства</reports>
+  <reports>Report.ЗатратыПоВидамПродукцииПоГодам</reports>
+  <reports>Report.ЗатратыПоСервиснымЦентрам</reports>
+  <reports>Report.ЗатратыПоПроизводителю</reports>
+  <reports>Report.РемонтыПоДатамПродаж</reports>
+  <reports>Report.ИтогиПоПродажам</reports>
+  <reports>Report.ИтогиПоПроизводству</reports>
+  <reports>Report.ОбщийБракПоДатамПродаж</reports>
+  <reports>Report.ЗатратыПоВидамПродукцииНаЕдиницу</reports>
+  <reports>Report.ПоСрокуСлужбы</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>
